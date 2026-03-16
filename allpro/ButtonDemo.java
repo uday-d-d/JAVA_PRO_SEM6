@@ -7,7 +7,9 @@ import java.applet.*;
 */
 
 public class ButtonDemo extends Applet{
-    String msg = "";
+    public void paint(Graphics g){
+        g.drawString("Buttons are here", 6, 100);
+    }
 
     Button yes, no, maybe;
     public void init(){
@@ -18,9 +20,7 @@ public class ButtonDemo extends Applet{
         add(no);
         add(maybe);
     }
-    public void paint(Graphics g){
-        g.drawString(msg, 6, 100);
-    }
+    
 }
 
 // javac ButtonDemo.java

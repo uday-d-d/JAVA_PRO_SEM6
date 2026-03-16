@@ -20,8 +20,4 @@ public class CheckBoxDemo extends Applet {
         add(solaris);
         add(mac);
     }
-
-    public void paint(Graphics g){
-
-    }
-}
+} 
