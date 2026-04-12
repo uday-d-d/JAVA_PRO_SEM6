@@ -13,7 +13,7 @@ public class BorderlDemo extends Applet{
         Button b1 = new Button("This the North");
         add(b1, BorderLayout.NORTH);
 
-        Label l1 = new Label("This is South");
+        Label l1 = new Label("This is South");  
         add(l1, BorderLayout.SOUTH);
 
         Label l2 = new Label("This is WEST");
