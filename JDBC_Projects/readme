@@ -1,0 +1,5 @@
+To compile JDBC file 
+                javac -cp ".;ojdbc8.jar" Test.java
+
+To run JDBC file 
+                java -cp ".;ojdbc8.jar" Test
