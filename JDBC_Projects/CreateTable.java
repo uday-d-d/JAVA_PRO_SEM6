@@ -21,7 +21,7 @@ class CreateTable {
             String post = rs.getString(3);
             float salary = rs.getFloat(4);
 
-            System.out.println(id + " " + name + " "+ post + " " +salary);
+            System.out.println(id + ", " + name + ", "+ post + ", " +salary);
         }
     con.close();
     }
