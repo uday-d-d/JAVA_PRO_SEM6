@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>EmpInsert</servlet-name>
+        <servlet-class>EmpInsert</servlet-class>
+        <init-param>
+        <param-name>p1</param-name>
+        <param-value>oracle.jdbc.driver.oracleDriver</param-value>
+        
+         </init-param>
+           <init-param>
+        <param-name>p2</param-name>
+        <param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+        
+         </init-param>
+           <init-param>
+        <param-name>p3</param-name>
+        <param-value>system</param-value>
+        
+         </init-param>
+           <init-param>
+        <param-name>p4</param-name>
+        <param-value>1234</param-value>
+        
+         </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>EmpDelete</servlet-name>
+        <servlet-class>EmpDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmpInsert</servlet-name>
+        <url-pattern>/EmpInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EmpDelete</servlet-name>
+        <url-pattern>/EmpDelete</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

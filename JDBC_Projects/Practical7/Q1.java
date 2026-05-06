@@ -19,7 +19,7 @@ public class Q1 {
 
             // 4. CREATE TABLE
             stmt.executeUpdate(
-                "CREATE TABLE student (" +
+                "create table student1 (" +
                 "roll_no NUMBER , " +
                 "name VARCHAR2(50), " +
                 "branch VARCHAR2(30), " +
